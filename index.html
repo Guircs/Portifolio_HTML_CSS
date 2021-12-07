@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/919a958486.js" crossorigin="anonymous"></script>
+	<title>Guilherme Rabelo</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+	<header>
+		<div> 
+			<img src="" alt="">
+		</div>
+
+		<ul>
+			<li>
+				<a target="_blank" href="https://www.linkedin.com/in/guilherme-rabelo-carneiro-da-silva-381315141/">LinkedIn</a>
+			</li>
+			<li>
+				<a target="_blank" href="https://github.com/Guircs">Github</a>
+			</li>
+			<li>
+				<a target="_blank" href="mailto:guilherme.rabelo@live.com">e-mail</a>
+			</li>
+
+		</ul>
+	</header>
+	<main>
+		<section class="container">
+			<div class="name">
+				<h1> Guilherme Rabelo </h1>
+				<h5> Químico e desenvolvedor </h5>
+			</div>
+
+			<div onClick="displayAbout()" id="arrow">
+				<i id= "animation" class="fas fa-caret-down"></i>
+			</div>
+
+			<div style="display: none;" id="about">
+				<p>
+					Formado em química pela UFRJ, tenho experiência em instrumentação e análises químicas. Além disso, já concluí treinamentos na Gama Academy, tendo conhecimentos em Python, JavaScript, HTML e CSS. 
+				</p>
+			</div>
+
+			<div class="form">
+				<div>
+					<p>deixe seu contato!</p>
+				</div>
+				<form action="">
+					<input type="text" placeholder="Mande sua mensagem">
+					<button>enviar!</button>
+				</form>
+			</div>
+		</section>
+
+	</main>
+
+
+	<script>
+		function displayAbout(){
+			var arrow = document.getElementById('animation');
+			arrow.classList.toggle('rotate');
+			var display = document.getElementById('about');
+			display.classList.toggle('slide-bottom');
+		}
+	</script>
+
+</body>
+</html>
